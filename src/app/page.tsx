@@ -1,7 +1,11 @@
+import AppBlog from '@/components/app-blog';
+import AppHero from '@/components/app-hero';
+
 export default function Home() {
 	return (
-		<main className="container mx-auto flex min-h-screen flex-col items-center justify-between p-24">
-			<h1>Title</h1>
-		</main>
+		<>
+			<AppHero />
+			<AppBlog />
+		</>
 	);
 }
