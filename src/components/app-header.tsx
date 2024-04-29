@@ -16,6 +16,7 @@ import {
 	PhoneIcon,
 	PlayCircleIcon,
 } from '@heroicons/react/20/solid';
+import { HeaderNav } from './header-nav';
 
 const products = [
 	{
@@ -148,15 +149,14 @@ export const AppHeader: React.FC = () => {
 							</Popover.Panel>
 						</Transition>
 					</Popover> */}
-
-					<a
-						href="#"
+					{/* <a
+						href="/about-us"
 						className="text-sm font-semibold leading-6 text-gray-900"
 					>
 						О нас
 					</a>
 					<a
-						href="#"
+						href="/about-us"
 						className="text-sm font-semibold leading-6 text-gray-900"
 					>
 						Услуги
@@ -172,7 +172,8 @@ export const AppHeader: React.FC = () => {
 						className="text-sm font-semibold leading-6 text-gray-900"
 					>
 						Контакты
-					</a>
+					</a> */}
+					<HeaderNav />
 				</Popover.Group>
 				<div className="hidden lg:flex lg:flex-1 lg:justify-end">
 					{/* <a
@@ -245,8 +246,8 @@ export const AppHeader: React.FC = () => {
 										</>
 									)}
 								</Disclosure> */}
-								<a
-									href="#"
+								{/* <a
+									href="/about-us"
 									className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
 								>
 									О нас
@@ -268,7 +269,9 @@ export const AppHeader: React.FC = () => {
 									className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
 								>
 									Контакты
-								</a>
+								</a> */}
+
+								<HeaderNav />
 							</div>
 							<div className="py-6">
 								{/* <a

@@ -3,8 +3,9 @@ import clsx from 'clsx';
 
 export const HeaderNav = () => {
 	const navLinks = [
-		{ href: '/posts', label: 'Публикации' },
 		{ href: '/about-us', label: 'О нас' },
+		{ href: '/services', label: 'Услуги' },
+		{ href: '/posts', label: 'Публикации' },
 		{ href: '/contacts', label: 'Контакты' },
 	];
 
