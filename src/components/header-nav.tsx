@@ -17,9 +17,11 @@ export const HeaderNav = () => {
 						key={index}
 						className={clsx(
 							{
-								'mr-2': index !== navLinks.length - 1,
+								'mr-4': index !== navLinks.length - 1,
 							},
-							'text-black',
+							'text-gray-800 dark:text-white',
+							'text-lg',
+							'transition-all',
 						)}
 					>
 						<AppLink href={link.href} label={link.label} />

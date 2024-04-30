@@ -63,13 +63,13 @@ export const AppHeader: React.FC = () => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 	return (
-		<header className="bg-white">
+		<header className="bg-white dark:bg-gray-900">
 			<nav
-				className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+				className="container mx-auto flex items-center justify-between p-6 lg:px-8"
 				aria-label="Global"
 			>
 				<div className="flex lg:flex-1">
-					<a href="#" className="-m-1.5 p-1.5">
+					<a href="/" className="-m-1.5 p-1.5">
 						<span className="sr-only">Your Company</span>
 						<Image className="h-8 w-auto" src="" alt="logo" />
 					</a>
@@ -183,9 +183,15 @@ export const AppHeader: React.FC = () => {
 						Log in <span aria-hidden="true">&rarr;</span>
 					</a> */}
 
-					<button className="rounded-md bg-sky-600 p-3 text-white">
-						Написать
-					</button>
+					<a
+						href="tel:+7 999 999 99 99"
+						className="
+						flex items-center gap-x-2 text-sm
+						font-semibold leading-6 text-gray-800 dark:text-white
+					"
+					>
+						+7 999 999 99 99
+					</a>
 				</div>
 			</nav>
 			<Dialog

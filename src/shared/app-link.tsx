@@ -7,7 +7,7 @@ interface AppLinkProps {
 
 export const AppLink = ({ href, label }: AppLinkProps) => {
 	return (
-		<Link href={href} className="mt-10 text-amber-950">
+		<Link data-component="app-link" href={href} className="">
 			{label}
 		</Link>
 	);

@@ -1,3 +1,11 @@
+import AppFeatures from '@/components/app-features';
+import AppTeam from '@/components/app-team';
+
 export default function Page() {
-	return <h1>Hello, about us Page!</h1>;
+	return (
+		<>
+			<AppTeam />
+			<AppFeatures />
+		</>
+	);
 }
