@@ -34,7 +34,6 @@ jobs:
             - name: Check files 📁
               run: |
                   ls -l
-                  ls -l out
 
             - name: Upload artifact 📡
               uses: actions/upload-pages-artifact@v3
