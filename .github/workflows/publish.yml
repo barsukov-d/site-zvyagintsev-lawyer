@@ -1,7 +1,8 @@
 name: publish-to-github-pages
 on:
     push:
-        branches: ['main-page']
+        branches:
+            - master
 
 permissions:
     contents: read
@@ -29,16 +30,11 @@ jobs:
                   static_site_generator: next
 
             - name: Build with Next.js 🏗️
-              run: pnpm run build
-
-            - name: Check files 📁
-              run: |
-                  ls -l
+              run: npx next build
 
             - name: Upload artifact 📡
               uses: actions/upload-pages-artifact@v3
               with:
-                  name: website
                   path: ./out
 
     deploy:
