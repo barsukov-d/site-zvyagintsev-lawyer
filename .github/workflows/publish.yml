@@ -31,6 +31,11 @@ jobs:
             - name: Build with Next.js 🏗️
               run: pnpm run build
 
+            - name: Check files 📁
+              run: |
+                  ls -l
+                  ls -l out
+
             - name: Upload artifact 📡
               uses: actions/upload-pages-artifact@v3
               with:
