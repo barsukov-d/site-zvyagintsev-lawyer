@@ -1,3 +1,5 @@
+import AppContacts from '@/components/app-contacts';
+
 export default function Page() {
-	return <h1>Hello, contacts Page!</h1>;
+	return <AppContacts />;
 }

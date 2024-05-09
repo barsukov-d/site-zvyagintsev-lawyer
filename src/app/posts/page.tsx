@@ -1,3 +1,6 @@
+import AppBlog from '@/components/app-blog';
+import AppBlogList from '@/components/app-blog-list';
+
 export default function Page() {
-	return <h1>Hello, Posts Page!</h1>;
+	return <AppBlogList />;
 }
