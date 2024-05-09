@@ -17,6 +17,8 @@ import {
 	PlayCircleIcon,
 } from '@heroicons/react/20/solid';
 import { HeaderNav } from './header-nav';
+import { AppLink } from '@/shared/app-link';
+import Link from 'next/link';
 
 const products = [
 	{
@@ -252,30 +254,34 @@ export const AppHeader: React.FC = () => {
 										</>
 									)}
 								</Disclosure> */}
-								{/* <a
+								{/* <AppLink
+									href={'/about-us'}
+									label={'0 нас'}
+								></AppLink> */}
+								<Link
 									href="/about-us"
 									className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
 								>
-									О нас
-								</a>
-								<a
-									href="#"
+									0 нас
+								</Link>
+								<Link
+									href="/services"
 									className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
 								>
 									Услуги
-								</a>
-								<a
-									href="#"
+								</Link>
+								<Link
+									href="/posts"
 									className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
 								>
 									Публикации
-								</a>
-								<a
-									href="#"
+								</Link>
+								<Link
+									href="/contacts"
 									className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
 								>
 									Контакты
-								</a> */}
+								</Link>
 
 								<HeaderNav />
 							</div>
